@@ -1,5 +1,3 @@
--- ==== Key Bow: полная замена + StringCurve без C0 + тетива ====
-
 local Players = game:GetService("Players")
 local RS = game:GetService("ReplicatedStorage")
 local Player = Players.LocalPlayer
@@ -78,7 +76,7 @@ if refPrimary then
     end
 end
 
--- StringCurve без C0
+-- StringCurve
 local baseSC = baseBow:FindFirstChild("StringCurve")
 local keySC = keyBow:FindFirstChild("StringCurve")
 if baseSC and keySC then
@@ -179,5 +177,3 @@ if ItemLibraryModule then
         end
     end
 end
-
-print("[KeyBow] Готово. Зайди в раунд.")
